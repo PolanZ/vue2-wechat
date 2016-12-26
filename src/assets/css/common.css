@@ -1,0 +1,25 @@
+.app-header {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 3;
+	height: 45px;
+	line-height: 45px;
+	font-size: 19px;
+	background: linear-gradient(180deg,#303036,#3c3b40);
+	color: #fff;
+	text-align: center;
+}
+
+.cover_top {
+	padding: 0 12px;
+	height: 45px;
+	line-height: 45px;
+}
+
+/* 开始 结束动画 css start */
+.slide-enter {
+	
+}
+/* 开始 结束动画 css end */
