@@ -1,3 +1,25 @@
+* {
+	box-sizing: border-box;
+}
+html, body {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	font-family: 'Microsoft YaHei'
+}
+
+.welcome {
+	width: 100%;
+    height: 100%;
+    z-index: 1000;
+    position: fixed;
+    left: 0;
+    top: 0;
+    -webkit-transition: all .25s linear;
+    transition: all .25s linear;
+    background: url(../images/launchimage.png) no-repeat 50%;
+    background-size: cover;
+}
 .app-header {
 	position: absolute;
 	left: 0;
@@ -11,15 +33,110 @@
 	color: #fff;
 	text-align: center;
 }
+.app-content {
+	padding-top: 45px;
+}
+
+.topHandle {
+	position: absolute;
+	width: 100%;
+	font-size: 19px;
+	color: #fff;
+	z-index: 3;
+}
 
 .cover_top {
+	display: flex;
 	padding: 0 12px;
+	width: 100%;
 	height: 45px;
 	line-height: 45px;
 }
+.cover_top .cover_left, .cover_top .cover_right, 
+.topHandle .cover_left, .topHandle .cover_right {
+	font-size: 17px;
+	width: 55px;
+	height: 45px;
+}
+.cover_top .cover_center,
+.topHandle .cover_center {
+	flex: 1;
+	text-align: center;
+}
+
+.app-footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 45px;
+}
+
+/* 路由 */
+.full_router {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	z-index: 4;
+	overflow: hidden;
+}
+.full_router .content {
+	margin-top: 45px;
+	padding-bottom: 45px;
+	height: 100%;
+	background-color: #fff;
+}
+/* 路由 */
+
 
 /* 开始 结束动画 css start */
-.slide-enter {
-	
+.welcome-leave {
+	opacity: 1;
 }
+.welcome-leave-active {
+	opacity: 0;
+	transition: all .3s ease;
+}
+.slide-enter {
+	transform: translate3d(50%,0,0);
+	opacity: 0;
+}
+.slide-enter-active {
+	transform: translate3d(0,0,0);
+	opacity: 1;
+	transition: all .3s ease;
+}
+.slide-leave {
+	opacity: 1;
+	transform: translate3d(0,0,0);
+}
+.slide-leave-active {
+	transform: translate3d(50%,0,0);
+	opacity: 0;
+	transition: all .3s ease;
+}
+
+.slideHome-enter {
+	transform: translate3d(-50%,0,0);
+	opacity: 0;
+}
+.slideHome-enter-active {
+	transform: translate3d(0,0,0);
+	opacity: 1;
+	transition: all .3s ease;
+}
+.slideHome-leave {
+	opacity: 1;
+	transform: translate3d(0,0,0);
+}
+.slideHome-leave-active {
+	transform: translate3d(-50%,0,0);
+	opacity: 0;
+	transition: all .3s ease;
+}
+/* .slide50-enter {
+	transform: translate3d(-50%,0,0);
+} */
 /* 开始 结束动画 css end */
