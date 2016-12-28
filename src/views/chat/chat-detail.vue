@@ -1,9 +1,12 @@
 <template>
 	<div class="full_router detail">
-		<top-handle title="个人资料"></top-handle>
-		<div class="content">
-			
+		<div class="full_inner">
+			<top-handle title="个人资料"></top-handle>
+			<div class="content">
+				
+			</div>
 		</div>
+		<router-view></router-view>
 	</div>
 </template>
 

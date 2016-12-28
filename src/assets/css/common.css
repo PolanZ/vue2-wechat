@@ -7,6 +7,10 @@ html, body {
 	height: 100%;
 	font-family: 'Microsoft YaHei'
 }
+a {
+	text-decoration: none;
+	color: #666;
+}
 
 .welcome {
 	width: 100%;
@@ -68,7 +72,7 @@ html, body {
 	position: absolute;
 	bottom: 0;
 	width: 100%;
-	height: 45px;
+	height: 50px;
 }
 
 /* 路由 */
@@ -80,13 +84,21 @@ html, body {
 	height: 100%;
 	overflow: hidden;
 	z-index: 4;
-	overflow: hidden;
 }
 .full_router .content {
 	margin-top: 45px;
 	padding-bottom: 45px;
 	height: 100%;
 	background-color: #fff;
+}
+.full_router .full_inner {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	z-index: 2;
 }
 /* 路由 */
 

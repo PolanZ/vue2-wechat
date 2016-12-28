@@ -8,11 +8,7 @@ Vue.use(VueRouter)
 
 const routes = [{
 	path: '/',
-	component: Chat,
-	children: [{
-		path: 'detail',
-		component: ChatDetail
-	}]
+	redirect: '/chat'	// 重定向
 },{
 	path: '/chat',
 	component: Chat,

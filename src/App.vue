@@ -6,11 +6,9 @@
       </transition>
     </header>
     <section class="app-content">
-      <transition name="slideHome">
-        <keep-alive>
-          <router-view></router-view>
-        </keep-alive>
-      </transition>
+      <keep-alive>
+        <router-view></router-view>
+      </keep-alive>
     </section>
     <footer class="app-footer">
       <transition name="slideHome">
@@ -29,6 +27,8 @@
 <script>
 import './assets/css/reset.css'
 import './assets/css/common.css'
+import './assets/css/iconfont.css'
+
 import Header from './components/Header.vue'
 import Footer from './components/Footer.vue'
 
@@ -50,7 +50,7 @@ export default {
   watch: {
     '$route' (to, from) {
       // console.log(to)
-      if(to.path == '/') {
+      if(to.path == '/chat'||to.path == '/find'||to.path == '/contact'||to.path == '/me') {
         this.decline = true
       }else {
         this.decline = false
