@@ -51,6 +51,7 @@
 	.menu > div > .text {
 		margin-top: 2px;
 		font-size: 14px;
+		color: #999;
 	}
 	.menu > div.router-link-active {
 		color: #0bb908;

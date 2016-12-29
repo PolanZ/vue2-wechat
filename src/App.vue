@@ -49,8 +49,7 @@ export default {
   },
   watch: {
     '$route' (to, from) {
-      // console.log(to)
-      if(to.path == '/chat'||to.path == '/find'||to.path == '/contact'||to.path == '/me') {
+      if(['/chat', '/contact', '/find', '/me'].indexOf(to.path) != -1) {
         this.decline = true
       }else {
         this.decline = false

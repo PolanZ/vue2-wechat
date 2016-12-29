@@ -1,10 +1,10 @@
 var list = [{
     "base": {
         "id": 1,
-        "name": "杨涛",
-        "nickname": "nick_杨涛",
-        "remark": "remark_杨涛",
-        "wxid": "wxid_yangtao",
+        "name": "Polan",
+        "nickname": "nick_Polan",
+        "remark": "remark_Polan",
+        "wxid": "wxid_wu81731891",
         "qq": "00001",
         "email": "00001@qq.com",
         "type": "friends",
@@ -18,8 +18,8 @@ var list = [{
     //对话列表基本项
     "chatBaseModel": {
         "newsUnreadCount": 1,
-        "endTimeStr": 1472632586443,
-        "endChatAuth": "杨涛",
+        "endTimeStr": 1483002560,
+        "endChatAuth": "Polan",
         "endChatTxt": "晚上打球?",
     },
     //对话框底部菜单
@@ -30,9 +30,9 @@ var list = [{
     "chatMemberModel": [{
         "id": 1,
         "iconSrc": "//images2015.cnblogs.com/blog/528573/201609/528573-20160925131410373-516492873.jpg",
-        "name": "杨涛",
-        "nickname": "nick_杨涛",
-        "remark": "remark_杨涛",
+        "name": "Polan",
+        "nickname": "nick_Polan",
+        "remark": "remark_Polan",
     }],
     "chatConfigModel": {
         "isStick": false, //置顶
@@ -59,7 +59,7 @@ var list = [{
     },
     "chatBaseModel": {
         "newsUnreadCount": 1,
-        "endTimeStr": 1472632586443,
+        "endTimeStr": 1483002560,
         "endChatAuth": "领导",
         "endChatTxt": "大家下班的时候记得锁好门",
     },
@@ -71,13 +71,13 @@ var list = [{
     "chatMemberModel": [{
         "id": 1,
         "iconSrc": "//images2015.cnblogs.com/blog/528573/201609/528573-20160925131410373-516492873.jpg",
-        "name": "yangtao01",
+        "name": "wu8173189101",
         "nickname": "nick_微信群01",
         "remark": "remark_微信群01",
     }, {
         "id": 1,
         "iconSrc": "//images2015.cnblogs.com/blog/528573/201609/528573-20160925131410373-516492873.jpg",
-        "name": "yangtao02",
+        "name": "wu8173189102",
         "nickname": "nick_微信群01",
         "remark": "remark_微信群01"
     }],
@@ -109,7 +109,7 @@ var list = [{
     //对话列表基本项
     "chatBaseModel": {
         "newsUnreadCount": 11,
-        "endTimeStr": 1472632586443,
+        "endTimeStr": 1477211592,
         "endChatAuth": "",
         "endChatTxt": "挖掘最优质的互联网技术",
     },
@@ -174,7 +174,7 @@ var list = [{
     //对话列表基本项
     "chatBaseModel": {
         "newsUnreadCount": 0,
-        "endTimeStr": 1472632586443,
+        "endTimeStr": 1408774992,
         "endChatAuth": "",
         "endChatTxt": "饿了么网上订餐平台",
     },
