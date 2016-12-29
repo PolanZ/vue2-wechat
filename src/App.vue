@@ -26,6 +26,7 @@
 
 <script>
 import './assets/css/reset.css'
+import './assets/css/weui.min.css'
 import './assets/css/common.css'
 import './assets/css/iconfont.css'
 
@@ -49,8 +50,7 @@ export default {
   },
   watch: {
     '$route' (to, from) {
-      // console.log(to)
-      if(to.path == '/chat'||to.path == '/find'||to.path == '/contact'||to.path == '/me') {
+      if(['/chat', '/contact', '/find', '/me'].indexOf(to.path) != -1) {
         this.decline = true
       }else {
         this.decline = false

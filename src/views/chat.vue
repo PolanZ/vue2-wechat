@@ -2,11 +2,14 @@
 	<div class="chat-content">
 		<transition name="slideHome">
 		<div class="chat-list-content" v-show="decline">
-			<router-link class="chat-list" to="/chat/detail">
-				<div class="userImg"></div>
+			<router-link class="chat-list" to="/chat/detail" v-for="item in wechat_list">
+				<div class="userImg">
+					<img :src="item.base.iconSrc" alt="">
+				</div>
 				<div class="userInfo">
-					<div class="userName">PolanXXXX</div>
-					<div class="message">今晚去打球？今晚去打球？今晚去打球？今晚去打球？今晚去打球？</div>
+					<div class="endTime">{{ item.chatBaseModel.endTimeStr | ftDate }}</div>
+					<div class="userName">{{ item.base.name }}</div>
+					<div class="message">{{ item.chatBaseModel.endChatTxt }}</div>
 				</div>
 			</router-link>
 		</div>
@@ -36,14 +39,28 @@
 		height: 48px;
 		background-color: #eee;
 		border-radius: 4px;
-	}
-	.userInfo {
-		flex: 1;
-		margin-left: 15px;
 		overflow: hidden;
 	}
+	.userImg img {
+		width: 48px;
+		height: 48px;
+		overflow: hidden;
+	}
+	.userInfo {
+		position: relative;
+		flex: 1;
+		margin-left: 10px;
+		overflow: hidden;
+	}
+	.userInfo .endTime {
+		position: absolute;
+		right: 0;
+		top: 0;
+		color: #ccc;
+		font-size: 13px;
+	}
 	.userName {
-		margin-bottom: 10px;
+		margin-bottom: 2px;
 	}
 	.message {
 		width: 90%;
@@ -60,21 +77,44 @@
 	export default {
 		data () {
 			return {
+				wechat_list: [],
 				decline: false
 			}
 		},
 		created () {
-			this.decline = true
+			this.decline = true,
+			this.$store.dispatch('setMenuWechatList')
+			let chatStore = this.$store.state.chat
+			this.wechat_list = chatStore.wechat_list
+			// console.log(this.wechat_list)
+		},
+		filters: {
+			ftDate (val) {
+				let endDate = new Date(parseInt(val) * 1000),
+					year = endDate.getFullYear(),
+					month = endDate.getMonth(),
+					day = endDate.getDate(),
+					hour = endDate.getHours(),
+					min = endDate.getMinutes()
+				// console.log(year, (new Date()).getFullYear())
+				if (year < (new Date()).getFullYear()) {
+					// let date = endDate.toLocaleTimeString().replace(/年|月/g, "-").replace(/日/g, " ")
+					return year +'/'+ month +'/'+ day
+				}
+				return hour + ':' + (min.toString().length==1 ? '0'+min : min)
+			}
 		},
 		watch: {
 			'$route' (to, from) {
-				// console.log(to)
-				if(to.path == '/chat'||to.path == '/find'||to.path == '/contact'||to.path == '/me') {
+				if(['/chat', '/contact', '/find', '/me'].indexOf(to.path) != -1) {
 					this.decline = true
 				}else {
 					this.decline = false
 				}
 			}
 		},
+		methods: {
+
+		}
 	}
 </script>

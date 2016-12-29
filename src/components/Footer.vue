@@ -2,26 +2,26 @@
 	<nav>
 		<div class="menu">
 			<router-link to="/chat" tag="div">
-				<div class="iconfont icon-wechat"></div>
-	            <div class="text">微信</div>
+				<span class="iconfont icon-wechat"></span>
+	            <span class="text">微信</span>
 			</router-link>
 		</div>
 		<div class="menu">
 			<router-link to="/contact" tag="div">
-				<div class="iconfont icon-contact"></div>
-	            <div class="text">通讯录</div>
+				<span class="iconfont icon-contact"></span>
+	            <span class="text">通讯录</span>
 			</router-link>
 		</div>
 		<div class="menu">
 			<router-link to="/find" tag="div">
-				<div class="iconfont icon-find"></div>
-	            <div class="text">发现</div>
+				<span class="iconfont icon-find"></span>
+	            <span class="text">发现</span>
 			</router-link>
 		</div>
 		<div class="menu">
 			<router-link to="/me" tag="div">
-				<div class="iconfont icon-me"></div>
-	            <div class="text">我的</div>
+				<span class="iconfont icon-me"></span>
+	            <span class="text">我的</span>
 			</router-link>
 		</div>
 	</nav>
@@ -45,14 +45,19 @@
 		width: 60px;
 		color: #666;
 	}
+	.menu > div > span {
+		display: block;
+		line-height: 1;
+	}
 	.menu > div > .iconfont {
 		font-size: 24px;
 	}
 	.menu > div > .text {
 		margin-top: 2px;
-		font-size: 14px;
+		font-size: 12px;
+		color: #999;
 	}
-	.menu > div.router-link-active {
+	.menu > div.router-link-active, .menu > div.router-link-active > .iconfont, .menu > div.router-link-active > .text {
 		color: #0bb908;
 	}
 </style>

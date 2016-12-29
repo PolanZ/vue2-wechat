@@ -2,14 +2,14 @@ module.exports = [{
     "alpha": "A",
     "list": [{
         "id": 1,
-        "name": "杨涛",
-        "nickname":"杨涛",
-        "remark":"阿涛",
+        "name": "Polan",
+        "nickname":"Polan",
+        "remark":"阿伦",
         "wxid": "wxid_yangtao",
         "qq": "00000",
         "email": "00000@qq.com",
         "type": "friends",
-        "iconSrc": "//images2015.cnblogs.com/blog/528573/201609/528573-20160925131410373-516492873.jpg",
+        "iconSrc": "https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=199120020,1932838991&fm=116&gp=0.jpg",
         "qrCode": "",
         "signature": "个性签名"
     }]
