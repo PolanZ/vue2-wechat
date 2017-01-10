@@ -68,11 +68,12 @@
 	.me-list .weui_cell_primary {
 		font-size: 14px;
 		color: #111;
+		margin-left: 8px;
 	}
 	.me-list .weui_cell_primary p:first-child {
 		font-size: 18px;
 	}
 	.me-list .weui_cell_primary p:last-child {
-		color: #777;
+		color: #555;
 	}
 </style>
