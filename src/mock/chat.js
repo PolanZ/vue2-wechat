@@ -1,7 +1,7 @@
 var list = [{
     "base": {
         "id": 1,
-        "name": "Polan",
+        "name": "阿伦",
         "nickname": "nick_Polan",
         "remark": "remark_Polan",
         "wxid": "wxid_wu81731891",
@@ -19,7 +19,7 @@ var list = [{
     "chatBaseModel": {
         "newsUnreadCount": 1,
         "endTimeStr": 1483002560,
-        "endChatAuth": "Polan",
+        "endChatAuth": "阿伦",
         "endChatTxt": "晚上打球?",
     },
     //对话框底部菜单
@@ -30,7 +30,7 @@ var list = [{
     "chatMemberModel": [{
         "id": 1,
         "iconSrc": "//images2015.cnblogs.com/blog/528573/201609/528573-20160925131410373-516492873.jpg",
-        "name": "Polan",
+        "name": "阿伦",
         "nickname": "nick_Polan",
         "remark": "remark_Polan",
     }],
