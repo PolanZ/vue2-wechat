@@ -2,7 +2,7 @@
 	<div class="chat-content">
 		<transition name="slideHome">
 		<div class="chat-list-content" v-show="decline">
-			<router-link class="chat-list" to="/chat/detail" v-for="item in wechat_list">
+			<router-link class="chat-list" to="/chat/dialogue" v-for="item in wechat_list">
 				<div class="userImg">
 					<img :src="item.base.iconSrc" alt="">
 				</div>
