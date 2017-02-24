@@ -79,6 +79,12 @@ a {
 	flex: 1;
 	text-align: center;
 }
+.topHandle .cover_right {
+	text-align: right;
+}
+.topHandle .cover_right .iconfont {
+	font-size: 24px;
+}
 
 .app-footer {
 	position: absolute;

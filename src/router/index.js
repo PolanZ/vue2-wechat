@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 
 import Chat from '../views/Chat.vue'
+import Dialogue from '../views/chat/dialogue.vue'
 import ChatDetail from '../views/chat/chat-detail.vue'
 
 import Contact from '../views/Contact.vue'
@@ -17,8 +18,12 @@ const routes = [{
 	path: '/chat',
 	component: Chat,
 	children: [{
-		path: 'detail',
-		component: ChatDetail
+		path: 'dialogue',
+		component: Dialogue,
+		children: [{
+			path: 'detail',
+			component: ChatDetail
+		}]
 	}]
 },{
 	path: '/contact',
