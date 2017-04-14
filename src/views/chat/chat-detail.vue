@@ -6,12 +6,14 @@
 				
 			</div>
 		</div>
-		<router-view></router-view>
+		<transition name="slide">
+			<router-view></router-view>
+		</transition>
 	</div>
 </template>
 
 <script>
-import TopHandle from '../top_handle.vue'
+import TopHandle from '../../components/top_handle.vue'
 
 export default {
 	data () {
